@@ -6,21 +6,96 @@
     <title>Tailwind CSS</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="container border-b-4 p-4 shadow-md sticky top-0 bg-white z-50">
+  <body class="bg-[url('/img/pattern.svg')] bg-cover bg-center">
+    <!-- Start Nav-->
+    <nav class="w-full border-b-4 p-4 shadow-md  top-0 bg-white z-50">
       <div class="flex justify-between items-center">
         <img
-          class="flex w-32 h-32 px-4 py-2 p-2 rounded"
+          class="flex w-32 px-4 py-2 p-2 rounded m-4"
           src="/img/ranek.svg"
           alt=""
           srcset=""
         />
         <a
-          class="px-4 py-2 rounded-md text-white text-2xl justify-between items-center bg-[#6655ff] flex"
+          class="px-4 py-2 rounded-md text-white text-2xl justify-between items-center bg-[#8877ff] flex"
           href="/"
           >Vender/Login</a
         >
       </div>
     </nav>
+    <!--End Nav-->
+    <!--Conteudo do site-->
+    <main class="container mx-auto p-4 mb-4">
+      <h1 class="text-[#8877ff] font-bold text-7xl text-center m-8">
+        👍 Compre ou Venda 👎
+      </h1>
+      <div class="justify-center items-center flex flex-wrap ">
+         <input class="px-4 py-2 focus:outline-[#8877ff] rounded m-4 text-2xl hover:-bg-clip-content hover:bg-slate-100 cursor-pointer ease-in-out delay-150 hover:scale-110 border-b-2 mx-auto p-4 shadow-md duration-500  " type="text" placeholder="Buscar...">
+    </main>
+    <!--Start Produtos -->
+    <section class="m-8 grid grid-cols-3 justify-center items-center gap-4 container mx-auto *:span:*:font-bold">
+  <!-- Produtos 01 -->
+    <div class="relative container justify-center items-center mx-auto border-b-slate-400 p-6 shadow-md">
+      <img class="justify-center items-center" src="/img/notebook-foto.jpg" alt="" srcset="">
+      <h2 class="m-2 text-[#ee8800] text-2xl font-bold">$ 2.300,00</h2>
+      <h1 class="text-3xl font-sans font-bold">Notebook</h1>
+      <p class="text-md font-semibold">Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.</p>
+      <div>
+      <span class="absolute top-4 right-4 bg-[#88dd33] hover:bg-[#8877ff] px-4 py-2 rounded-sm">Promoção : -20%</span>
+    </div>
+  </div>
+  <!-- Produtos 02 -->
+  <div class="relative container justify-center items-center mx-auto border-b-slate-400 p-6 shadow-md">
+    <img class="justify-center items-center" src="/img/smartphone-foto.jpg" alt="" srcset="">
+    <h2 class="m-2 text-[#ee8800] text-2xl font-bold">$ 2.399,00</h2>
+    <h1 class="text-3xl font-sans font-bold">Smartphone</h1>
+    <p class="text-md font-semibold">Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.</p>
+    <div>
+    <span class="absolute top-4 right-4 bg-[#88dd33] hover:bg-[#8877ff] px-4 py-2 rounded-sm">Promoção : -30%</span>
+  </div>
+</div>
+
+<!-- Produtos 03 -->
+<div class="relative container justify-center items-center mx-auto border-b-slate-400 p-6 shadow-md">
+  <img class="justify-center items-center" src="/img/camera.jpg" alt="" srcset="">
+  <h2 class="m-2 text-[#ee8800] text-2xl font-bold">$ 2.199,00</h2>
+  <h1 class="text-3xl font-sans font-bold">Câmera</h1>
+  <p class="text-md font-semibold">Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.</p>
+  <div>
+  <span class="absolute top-4 right-4 bg-[#88dd33] hover:bg-[#8877ff] px-4 py-2 rounded-sm">Promoção : -20%</span>
+</div>
+</div>
+
+<!-- Produtos 04 -->
+<div class="relative container justify-center items-center mx-auto border-b-slate-400 p-6 shadow-md">
+  <img class="justify-center items-center" src="/img/speaker-foto.jpg" alt="" srcset="">
+  <h2 class="m-2 text-[#ee8800] text-2xl font-bold">$ 1.499,00</h2>
+  <h1 class="text-3xl font-sans font-bold">Smartspeaker</h1>
+  <p class="text-md font-semibold">Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.</p>
+  <div>
+  <span class="absolute top-4 right-4 bg-[#88dd33] hover:bg-[#8877ff] px-4 py-2 rounded-sm">Promoção : -20%</span>
+</div>
+</div>
+<!-- Produtos 05 -->
+<div class="relative container justify-center items-center mx-auto border-b-slate-400 p-6 shadow-md">
+  <img class="justify-center items-center" src="/img/smartwatch-foto.jpg" alt="" srcset="">
+  <h2 class="m-2 text-[#ee8800] text-2xl font-bold">$ 1.199,00</h2>
+  <h1 class="text-3xl font-sans font-bold">Smartwatch</h1>
+  <p class="text-md font-semibold">Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.</p>
+  <div>
+  <span class="absolute top-4 right-4 bg-[#88dd33] hover:bg-[#8877ff] px-4 py-2 rounded-sm">Promoção : -10%</span>
+</div>
+</div>
+<!-- Produtos 06 -->
+<div class="relative container justify-center items-center mx-auto border-b-slate-400 p-6 shadow-md">
+  <img class="justify-center items-center" src="/img/tablet-foto.jpg" alt="" srcset="">
+  <h2 class="m-2 text-[#ee8800] text-2xl font-bold">$ 1.899,00</h2>
+  <h1 class="text-3xl font-sans font-bold">Tablet</h1>
+  <p class="text-md font-semibold">Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.</p>
+  <div>
+  <span class="absolute top-4 right-4 bg-[#88dd33] hover:bg-[#8877ff] px-4 py-2 rounded-sm">Promoção : -35%</span>
+</div>
+</div>
+</section>
   </body>
 </html>
